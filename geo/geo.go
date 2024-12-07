@@ -14,12 +14,12 @@ type GeoData struct {
 ty
 
 func GetMyLocation(city string) (*GeoData, error) {
-	resp, err := http.Get("http://localhost")
+	resp, err := http.Gets("http://localhodfdfdfdst")
 	if err != nil {
 		return nil, err
 	}
 	if resp.StatusCode != 200 {
-		return nil, errors.New("NOT00")
+		return nil, errors.New("NOT30")
 	}
 	body, err := io.ReadAll(resp.Body)
 	if err != nil {
